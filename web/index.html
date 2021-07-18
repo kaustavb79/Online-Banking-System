@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ONLINE BANKING</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/logo.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1a88ea4f70.js" crossorigin="anonymous"></script>
+  <style>
+    .navbar-inverse .navbar-nav > li > a,
+   .navbar-inverse .navbar-nav > li  a:hover,
+.navbar-inverse .navbar-nav > li  a:focus {
+  color: black;
+    background-color: rgb(144, 226, 215);
+    font-size: 20px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: black;
+    background-color: rgb(144, 226, 215);
+}
+
+#footer_links {
+  padding-top: 20px; font-size: 20px;color: black;
+  list-style: none;
+}
+#footer_links li > a{
+  text-decoration: none;
+  color: black ;
+}
+#footer_links li{
+  text-decoration: none;
+  padding: 5px;
+}
+  </style>
+</head>
+
+<body style="background-color: rgba(183, 189, 163, 0.411); ">
+
+<nav class="navbar navbar-inverse navbar-fixed-top shadow-lg p-3 mb-5 bg-white rounded" style="background-color: rgb(144, 226, 215); height: 80px;padding-top: 15px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color: rgb(10, 7, 7); font-weight: bold; font-size: 20px;"><img src="image/logo.png" style="height:70px; float: left; position: relative; top: -24px;color:transparent;"/>&nbsp;ONLINE BANKING</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; ">
+      <li><a href="#" data-toggle="modal" data-target="#loginPage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+      <li><a href="#" data-toggle="modal" data-target="#signupPage"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right " style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; text-align: center;">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Login<span class="caret"></span></a>
+        <ul class="dropdown-menu" style="text-align: center;padding: 10px;">
+            <li><a href="employee/employee_login.html">Employee</a></li>
+          <div class="divider"></div>
+          <li><a href="manager/manager_login.html">Manager</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+  
+<div class="container-fluid" style="padding-top: 100px;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 70%; float: left;margin-bottom: 20px;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+   
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="image/img1.jpg" alt="image 1"  style="width:100%; height: 300px;">
+      </div>
+
+      <div class="item">
+        <img src="image/image2.jpeg" alt="image 2" style="width:100%; height: 300px;">
+      </div>
+    
+      <div class="item">
+        <img src="image/inline_image_preview.jpg.webp" alt="image 3" style="width:100%; height: 300px;">
+      </div>
+      <div class="item">
+        <img src="image/image4.jpeg" alt="image 4" style="width:100%; height: 300px;">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid col-md-3" style="float: right; text-align: center;padding: 30px;margin-right: 28px;">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active"><a href="#">SERVICES</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ACCOUNTS
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="width: 100%;text-align: center;">
+          <li><a href="#">SAVINGS</a></li>
+          <div class="divider"></div>
+          <li><a href="#">CURRENT</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ATM-CARDS
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="width: 100%;text-align: center;">
+          <li><a href="#">DEBIT</a></li>
+          <div class="divider"></div>
+          <li><a href="#">CREDIT</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">FUNDS TRANSACTION
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="width: 100%;text-align: center;">
+          <li><a href="#">WITHIN SAME BANK</a></li>
+          <div class="divider"></div>
+          <li><a href="#">OTHER BANK TRANSFER</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row" style="text-align: center;background-color: rgba(173, 235, 196, 0.603);">
+    <div class="col-md-3" style=" padding-left: 60px;padding-top: 20px;">
+      <div class="card" style="width: 18rem;padding: 20px;">
+        <img class="card-img-top img-circle" style="margin-left: 20px;" src="image/icon1.png" alt="Card image cap" width="100" height="100">
+        <div class="card-body" style="padding: 8px; text-align: center;">
+          <p class="card-text" style=" font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Access your account online from anywhere</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3" style=" padding-left: 60px;padding-top: 20px;">
+      <div class="card" style="width: 18rem;padding: 20px;">
+        <img class="card-img-top img-circle" style="margin-left: 20px;" src="image/icon2.png" alt="Card image cap" width="100" height="100">
+        <div class="card-body" style="padding: 8px; text-align: center;">
+          <p class="card-text" style=" font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Transfer funds to anyone from anywhere</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3" style=" padding-left: 60px;padding-top: 20px;">
+      <div class="card" style="width: 18rem;padding: 20px;">
+        <img class="card-img-top img-circle" style="margin-left: 20px;" src="image/icon3.png" alt="Card image cap" width="100" height="100">
+        <div class="card-body" style="padding: 8px; text-align: center;">
+          <p class="card-text" style=" font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Vast variety of services offered by the bank</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3" style=" padding-left: 60px;padding-top: 20px;">
+      <div class="card" style="width: 18rem;padding: 20px;">
+        <img class="card-img-top img-circle" style="margin-left: 20px;" src="image/icon4.png" alt="Card image cap" width="100" height="100">
+        <div class="card-body" style="padding: 8px; text-align: center;">
+          <p class="card-text" style=" font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">High end encryption to provide safe online banking</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div class="modal" id="loginPage"  style="padding: 10px;margin-top:50px; background:transparent;">
+  <div class="modal-dialog">
+    <div class="modal-content" style="text-align: center;">
+      <button type="button" class="close" data-dismiss="modal" style="margin-right: 20px; margin-top: 10px; ">&times;</button>
+      <!-- Modal Header -->
+      <div class="modal-header"  >
+        <h4 class="modal-title" >LOGIN</h4>
+       
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form action="login_process" method="post">
+          <div class="form-group">
+            <i class="fas fa-user-tie"></i> <label for="username">USERNAME:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" style="padding: 20px;text-align: center;" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-key"></i> <label for="pwd">PASSWORD:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="padding: 20px;text-align: center;" required>
+          </div>
+          <input type="submit" class="btn btn-primary" name="login" value="LOGIN"/>
+          <input type="reset" class="btn btn-primary" value="RESET"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="signupPage"  style="padding: 10px;margin-top:50px; background:transparent;">
+  <div class="modal-dialog">
+    <div class="modal-content" style="text-align: center;">
+      <button type="button" class="close" data-dismiss="modal" style="margin-right: 20px; margin-top: 10px; ">&times;</button>
+      <div class="modal-header"  >
+        <h4 class="modal-title" >NET-BANKING REGISTRATION</h4>       
+      </div>
+      <div class="modal-body">
+          <form action="Register" method="post">
+          <div class="form-group">
+            <label for="name">FULL NAME:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="fullname" style="padding: 20px;text-align: center;" required>
+          </div>
+          <div class="form-group">
+            <label for="acc_no">ACCOUNT NO.:</label>
+            <input type="text" class="form-control" id="acc_no" placeholder="Enter Account Number" name="account_num" maxlength="8" minlength="8" style="padding: 20px;text-align: center;" required>
+          </div>
+          <div class="form-group">
+            <label for="email">EMAIL ID:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="padding: 20px;text-align: center;" required>
+          </div>
+          <div class="form-group">
+            <label for="username">USERNAME:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username" name="user" maxlength="15" minlength="8" style="padding: 20px;text-align: center;" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">PASSWORD:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" maxlength="15" minlength="8" style="padding: 20px;text-align: center;" data-trigger="focus" data-toggle="popover" minlength="8" maxlength="15" data-content="Password must be 8 to 15 characters long and must include a capital alphabet,small alphabet , numbers from 0-9 and special characters such as #,@,$,&" required>
+          </div>
+
+          <input type="submit" class="btn btn-primary" name="login" value="SIGN UP"/>
+          <input type="reset" class="btn btn-primary" value="RESET"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row" style="text-align: center; background-color: rgb(201, 198, 197); font-size: 30px;height: 250px;padding-top: 5px;">
+    Announcements
+    <hr>
+    <div class="col-lg-12" style="font-style: italic;font-size: 18px;" >
+     No recent announcements......
+    </div>
+  </div>
+  <div class="row" style="text-align: center; background-color: coral; font-size: 30px;height: 50px;padding-top: 5px;">
+    <div class="col-lg-12">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded">
+      Follow us on......
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 300px; background-color: rgba(18, 231, 82, 0.445);">
+    <div class="col-lg-3" style="text-align: center; align-items: center;padding-top: 100px;">
+      <i class="fab fa-facebook fa-7x" style="color: rgb(9, 89, 168);"></i>
+    </div>
+    <div class="col-lg-3" style="text-align: center; align-items: center;padding-top: 100px;">
+      <i class="fab fa-instagram fa-7x" style="color: rgba(241, 103, 11, 0.705);"></i>
+    </div>
+    <div class="col-lg-3" style="text-align: center; align-items: center;padding-top: 100px;">
+      <i class="fab fa-twitter fa-7x" style=" color: rgb(37, 177, 233); padding: 3px;"></i>
+    </div>
+    <div class="col-lg-3" style="text-align: center; align-items: center;padding-top: 100px;">
+      <i class="fab fa-linkedin fa-7x" style="color: rgb(27, 192, 192);"></i>
+    </div>
+  </div>
+  <div class="row" style="text-align: center; background-color: rgb(80, 150, 255); font-size: 30px;height: 250px;padding-top: 5px;">
+    <div class="col-lg-6" style="padding-top: 10px;">
+      Contact-Us: <hr style="border: 2px dashed grey;">
+      <p style="font-size: 17px;padding-top: 10px;font-family: Arial, Helvetica, sans-serif;">
+      Kaustav Bhattacharya<br/>
+      +91-9582009715<br>
+       kaustavb79@gmail.com
+      </p>
+    </div>
+    <div class="col-lg-6">
+      
+<ul id="footer_links">
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="MobileBank.html">Mobile Banking</a></li>
+  <li><a href="terms_and_condt.html">Terms and Conditions</a></li>
+  <li><a href="admin/developer_login.html">Developer Login</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<footer style="padding-top: 10px; padding-bottom: 10px; background-color: dimgrey; text-align: center;">
+
+  <i class="far fa-copyright fa-2x" style="color: cornsilk;">opyright: Kaustav Bhattacharya</i>
+</footer>
+
+
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+  });
+  </script>
+</body>
+</html>

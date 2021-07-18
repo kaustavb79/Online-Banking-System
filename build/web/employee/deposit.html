@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      form{
+            text-align: center;
+            
+            padding: 50px;
+      }
+      label{
+          font-size: 18px;
+          font-style: italic;
+          font-family: 'Courier New', Courier, monospace;
+          
+      }
+      input[type=text]{
+          padding: 10px;
+          text-align: center;
+          font-size: 18px;
+      }
+      input[type=submit]{
+        padding: 10px;
+          text-align: center;
+          font-size: 20px;
+          text-transform: uppercase;
+          border-radius: 10px;
+          background-color: aquamarine;
+
+      }
+  </style>
+ 
+</head>
+<body>
+
+<form action="Deposit" method="POST">
+<label for="account_num">Customer Account Number: &nbsp;&nbsp;&nbsp;</label>
+<input type="text" name="account_num" id="account_num" minlength="8" maxlength="8" onfocusout="account_number()" required/>
+<br><br><br>
+<label for="amount">Amount: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" name="amount" id="amount" onfocusout="deposit()" required/>
+<br><br><br>
+<input type="submit" name="deposit" value="deposit">
+
+</form>
+
+<script>
+    function account_number() {
+        var x;
+        
+        x = document.getElementById("account_num").value;
+        
+        if (isNaN(x)) {
+            alert("Please enter a 8 digit account number");
+            
+        } 
+        
+    }
+
+    function deposit() {
+        var x,y;
+        
+        x = document.getElementById("amount").value;
+        y=parseInt(x);
+        
+
+        if (isNaN(x)) {
+            alert("Invalid input in amount field!!!!");
+        }
+        else if(y<=0 || y>1000000){
+            alert("Max deposit limit----- Rs. 10,00,000 \- ");
+        } 
+        
+    }
+
+</script>
+</body>
+</html>
